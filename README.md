@@ -14,7 +14,7 @@ This work is licensed under the **Creative Commons Attribution 4.0 International
 If you use or modify this work, you **must** provide proper credit. The preferred citation format is:  
 
 > **[Optical I/O]** by **[Andy Sun]**, licensed under **CC BY 4.0**.  
-> Original source: [GitHub Repository URL](https://github.com/achoenix/optical_io/)  
+> Original source: [github.com/achoenix/optical_io](https://github.com/achoenix/optical_io/)  
 > License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
 ## How to Cite  
