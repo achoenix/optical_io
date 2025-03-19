@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c0925387-cde2-4a46-aef7-3a067a28196f)# NVIDIA System I/O Analysis
+# NVIDIA System I/O Analysis
 
 ## Design principles
 - AI workloads is latency and bandwidth sensitive
@@ -59,6 +59,10 @@ Note:
 
 ## GB200 NVL72 system
 
+
+## NVIDIA CPO
+
+![Image](https://github.com/user-attachments/assets/60a30901-0052-4e77-aa3c-196377bcd09d)
 
 ## Information
 ### GTC 2025
