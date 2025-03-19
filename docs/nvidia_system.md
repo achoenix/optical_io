@@ -63,7 +63,6 @@ Note:
 - Memory capacity of Rubin Ultra shown in GTC 2025 Keynote are not consistent for per GPU and total
 - NVLink 6 bandwidth and ConnextX-9 bandwidth are adopted from source [guru3d](https://www.guru3d.com/story/nvidia-confirms-nextgeneration-architecture-is-based-on-vera-rubin-gpu/)
 
-## GB100 NVL8 system
 
 ## GB200 NVL72 system
 
