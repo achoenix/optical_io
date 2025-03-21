@@ -36,12 +36,12 @@ Note:
 |--------------------------------|-----------|------------|------------|--------------|--------------|
 | **Number of Trays**            | N/A       | 36         | 36         | 36           | 36           |
 | **GPU**                        | H100      | B100/B200  | B300       | Rubin        | Rubin Ultra  |
-| **Number of GPUs**             | 8         | 72         | 72         | 144          | 576          |
+| **Number of GPUs**             | 8         | 72 (144 dies) | 72 (144 dies) | 144 dies | 576 dies   |
 | **CPU**                        | Grace     | Grace      | Grace      | Vera         | Vera         |
 | **Number of CPUs**             | N/A       | 36         | 36         | 36?          | 36?          |
 | **CPU-GPU Bandwidth**          |  TB/s  |  TB/s |  TB/s | 1.8 TB/s | 1.8 TB/s |
-| **Memory Capacity per GPU**    | 94 GB HBM3 | 192 GB HBM3e | 288 GB HBM3e | 520 GB HBM4 | 1 TB HBM4e (634 GB?) |
-| **Total Memory Capacity**      | 752 GB    | 13.824 TB | 20.736 TB | 75 TB | 365 TB |
+| **Memory Capacity per GPU**    | 94 GB HBM3 | 192 GB HBM3e | 288 GB HBM3e | 520 GB HBM4 | 1 TB HBM4e |
+| **Total Memory Capacity**      | 752 GB    | 13.824 TB | 20.736 TB | 75 TB | 365 TB (inconsistent with 1TB*144) |
 | **Memory Bandwidth per GPU**   | 3.9 TB/s  | 8 TB/s | 8 TB/s | 13 TB/s | ? TB/s |
 | **Total Memory Bandwidth**     | 31.2 TB/s | 576 TB/s | 576 TB/s | ? TB/s | 4500 TB/s |
 | **Scale-Up Interconnect**      | NVLink 4  | NVLink 5 | NVLink 5 | NVLink 6 | NVLink 7 |
@@ -50,7 +50,7 @@ Note:
 | **Server NIC**                 |     |   | ConnectX-8 (800Gb/s) | ConnectX-9 (1.6Tb/s) | ConnectX-9 (1.6T/s) |
 | **Scale-Out Interconnect**     | Not specified | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet |
 | **Total Scale-Out Bandwidth**  |  TB/s |  TB/s | 14.4 TB/s （144x800Gb/s) | 28.8 TB/s (144x1.6Tb/s) | 115.2 TB/s (576x1.6Tb/s?) |
-| **Total Rank System Power**    | Not specified | ~72 kW | Not specified | Not specified | Not specified |
+| **Total Rank System Power**    | Not specified | ~72 kW | Not specified | Not specified | 600 kW |
 | **FP4 Dense Inference**        | PLFOPS |  PFLOPS | 1.1 EFLOPS | 3.6 EFLOPS | 15 EFLOPS |
 | **FP8 Training**               | PLFOPS |  PFLOPS | 0.36 EFLOPS | 1.2 EFLOPS | 5 EFLOPS |
 
@@ -68,6 +68,14 @@ Note:
 
 
 ## NVIDIA CPO
+
+### Quantum-X switch
+GTC 2025 Keynote
+- NVidia will ship Quantum-X (InfiniBand) switch later in 2025, and then a Specturm-X (Ethernet) switch in the second half of 2026.
+- Up to 512 fiber ports on the Spectrum-X switch.
+- 2 optical transceivers per GPU now, 6 optical transceivers per GPU for larger scale with additional layer of switching
+- each transceiver (800G by assumption) costs $1000 and 6W. A 1M GPU datacenter will dedicate 6MW, 10 Rubin Ultra racks for optics
+- 
 
 ![Image](https://github.com/user-attachments/assets/60a30901-0052-4e77-aa3c-196377bcd09d)
 
