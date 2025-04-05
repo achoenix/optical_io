@@ -26,10 +26,10 @@
 
 Note:
 - Chip CoWoS Packaging: Each GPU utilizes a dual-die design with two GB100 dies connected via NVIDIA's NV-High Bandwidth Interface (NV-HBI), providing a 10 TB/s interconnect.
-- TDP depends on configurations [[ref](https://www.tomshardware.com/pc-components/gpus/nvidias-next-gen-ai-gpu-revealed-blackwell-b200-gpu-delivers-up-to-20-petaflops-of-compute-and-massive-improvements-over-hopper-h100?utm_source=chatgpt.com)]
+- TDP depends on configurations [[tomshardware](https://www.tomshardware.com/pc-components/gpus/nvidias-next-gen-ai-gpu-revealed-blackwell-b200-gpu-delivers-up-to-20-petaflops-of-compute-and-massive-improvements-over-hopper-h100?utm_source=chatgpt.com)]
   - HGX B200 Configuration: Each B200 GPU is rated at a TDP of 1,000W. 
   - GB200 Superchip Configuration: When integrated into the GB200 Superchip, a single B200 GPU can have a configurable TDP of up to 1,200W, with the entire superchip (comprising two B200 GPUs and one Grace CPU) reaching up to 2,700W.
-  - Rubin HBM bandwidth is sourced from: [[ref](https://www.theregister.com/2025/03/29/nvidia_moores_law/)]
+- Rubin HBM bandwidth is sourced from: [[theregister](https://www.theregister.com/2025/03/29/nvidia_moores_law/)]
 
 ### CPU rack system comparison
 
