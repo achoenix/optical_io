@@ -19,9 +19,9 @@
 | **INT8 Tensor**      | 0.4 P-OPS     | 3.5 P-OPS (dense) <br> 7 P-OPS (sparse) | 5 P-OPS (dense) <br> 9 P-OPS (sparse) | 7.5 P-OPS (dense), 15 P-OPS (sparse) | Not specified | Not specified |
 | **FP16 Tensor**      | 0.2 PFLOPS    | 1.85 PFLOPS (dense) <br> 3.5 PFLOPS (sparse) | 2.5 PFLOPS (dense) <br> 4.5 PFLOPS (sparse) | 3.75 PFLOPS (dense) <br> 7.5 PFLOPS (sparse) | Not specified | Not specified |
 | **FP64**             | 34 TFLOPS     | 30 TFLOPS                            | 40 TFLOPS                            | 68 TFLOPS                            | Not specified | Not specified |
-| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                          | 192 GB HBM3e                          | 288 GB HBM3e                          | 288 GB HBM4 | 1 TB HBM4e |
-| **Memory Bandwidth** | 3.2 TB/s      | Up to 8 TB/s                          | Up to 8 TB/s                          | Up to 8 TB/s                          | Not specified | Not specified |
-| **Power (TDP)**      | 700W          | 700W                                  | 1,000W                                | Not specified                         | Not specified | Not specified |
+| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                         | 192 GB HBM3e                          | 288 GB HBM3e                        | 288 GB HBM4 | 1 TB HBM4e |
+| **Memory Bandwidth** | 3.2 TB/s      | Up to 8 TB/s （4Tb/s /die)           | Up to 8 TB/s  （4Tb/s /die)           | Up to 8 TB/s    （4Tb/s /die)       | 8 TB/s /die | 8 TB/s /die |
+| **Power (TDP)**      | 700W          | 700W                                 | 1,000W                                | Not specified                       | Not specified | Not specified |
 
 
 Note:
@@ -29,6 +29,7 @@ Note:
 - TDP depends on configurations [[ref](https://www.tomshardware.com/pc-components/gpus/nvidias-next-gen-ai-gpu-revealed-blackwell-b200-gpu-delivers-up-to-20-petaflops-of-compute-and-massive-improvements-over-hopper-h100?utm_source=chatgpt.com)]
   - HGX B200 Configuration: Each B200 GPU is rated at a TDP of 1,000W. 
   - GB200 Superchip Configuration: When integrated into the GB200 Superchip, a single B200 GPU can have a configurable TDP of up to 1,200W, with the entire superchip (comprising two B200 GPUs and one Grace CPU) reaching up to 2,700W.
+  - Rubin HBM bandwidth is sourced from: [[ref](https://www.theregister.com/2025/03/29/nvidia_moores_law/)]
 
 ### CPU rack system comparison
 
