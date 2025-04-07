@@ -51,7 +51,7 @@ Note:
 | **Server NIC**                 |     |   | ConnectX-8 (800Gb/s) | ConnectX-9 (1.6Tb/s) | ConnectX-9 (1.6T/s) |
 | **Scale-Out Interconnect**     | Not specified | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet |
 | **Total Scale-Out Bandwidth**  |  TB/s |  TB/s | 14.4 TB/s （144x800Gb/s) | 28.8 TB/s (144x1.6Tb/s) | 115.2 TB/s (576x1.6Tb/s?) |
-| **Total Rank System Power**    | Not specified | ~72 kW | Not specified | Not specified | 600 kW |
+| **Total Rank System Power**    | 60 kW | 72-120 kW | ? | ? | 600 kW |
 | **FP4 Dense Inference**        | PLFOPS |  PFLOPS | 1.1 EFLOPS | 3.6 EFLOPS | 15 EFLOPS |
 | **FP8 Training**               | PLFOPS |  PFLOPS | 0.36 EFLOPS | 1.2 EFLOPS | 5 EFLOPS |
 
