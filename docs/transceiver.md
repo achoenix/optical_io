@@ -9,3 +9,4 @@
 ![Cignal AI](img/3Q24-OPTCO-Revenue-by-Company-1.webp "Cignal AI")
 
 ![Cignal AI](img/3Q24-OPTCO-Leaderboard-1-1536x867.png "Cignal AI")
+
