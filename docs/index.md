@@ -6,7 +6,7 @@ This is a review and analysis of optical I/O technology for AI and cloud computi
 
 ## Navigation
 
-- [NVIDIA system](nvdia_system.md)
+- [NVIDIA system](nvidia_system.md)
 - [Optical Interposer](optical_interposer.md)
 - [Optical Transceiver](transceiver.md)
 - [Contact](contact.md)

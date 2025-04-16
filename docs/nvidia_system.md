@@ -8,7 +8,7 @@
 
 ## GPU & System comparison
 
-### CPU comparison
+### GPU comparison
 
 | Specification                  | H100          | B100                                 | B200                                 | B300                                 | Rubin         | Rubin Ultra    |
 |----------------------|---------------|--------------------------------------|--------------------------------------|--------------------------------------|---------------|---------------|
@@ -31,7 +31,7 @@ Note:
   - GB200 Superchip Configuration: When integrated into the GB200 Superchip, a single B200 GPU can have a configurable TDP of up to 1,200W, with the entire superchip (comprising two B200 GPUs and one Grace CPU) reaching up to 2,700W.
 - Rubin HBM bandwidth is sourced from: [[theregister](https://www.theregister.com/2025/03/29/nvidia_moores_law/)]
 
-### CPU rack system comparison
+### GPU rack system comparison
 
 | Specification                  | H100 NVL8 | Blackwell NVL72 | Blackwell Ultra NVL72 | Rubin NVL144 | Rubin Ultra NVL576 |
 |--------------------------------|-----------|------------|------------|--------------|--------------|
@@ -39,7 +39,7 @@ Note:
 | **GPU**                        | H100      | B100/B200  | B300       | Rubin        | Rubin Ultra  |
 | **Number of GPUs**             | 8         | 72 (144 dies) | 72 (144 dies) | 144 dies | 576 dies   |
 | **CPU**                        | Grace     | Grace      | Grace      | Vera         | Vera         |
-| **Number of CPUs**             | N/A       | 36         | 36         | 36?          | 36?          |
+| **Number of CPUs**             | N/A       | 18/36      | 36         | 36?          | 36?          |
 | **CPU-GPU Bandwidth**          |  TB/s  |  TB/s |  TB/s | 1.8 TB/s | 1.8 TB/s |
 | **Memory Capacity per GPU**    | 94 GB HBM3 | 192 GB HBM3e | 288 GB HBM3e | 520 GB HBM4 | 1 TB HBM4e |
 | **Total Memory Capacity**      | 752 GB    | 13.824 TB | 20.736 TB | 75 TB | 365 TB (inconsistent with 1TB*144) |
@@ -67,10 +67,17 @@ Note:
 
 ## GB200 NVL72 system
 
+NVL72 system comes with different designs
+| System design | MGX | HGX | Note |
+| ------------- | --- | --- | --- |
+| # of CPU/server | 2 | 1 | |
+| # of GPU/server | 4 | 4 | |
+| fully connnected HBM within rack | Yes | No | |
+
 
 ## NVIDIA CPO
 
-### Quantum-X switch
+### CPO Switch
 GTC 2025 Keynote
 - NVidia will ship Quantum-X (InfiniBand) switch later in 2025, and then a Specturm-X (Ethernet) switch in the second half of 2026.
 - Up to 512 fiber ports on the Spectrum-X switch.
