@@ -6,9 +6,11 @@ This is a review and analysis of optical I/O technology for AI and cloud computi
 
 ## Navigation
 
-- [NVIDIA system](nvidia_system.md)
+- [Co-Packaged Optics](cpo.md)
+    - [NVIDIA Quantum-X CPO](nv_quantumx_cpo.md)
 - [Optical Interposer](optical_interposer.md)
 - [Optical Transceiver](transceiver.md)
+- [NVIDIA system](nvidia_system.md)
 - [Contact](contact.md)
 
 
@@ -27,5 +29,5 @@ If you use or modify this work, you **must** provide proper credit. The preferre
 > License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
 ## How to Cite  
-In academic papers or websites, you may use the following format:  
-X. Sun, Optical I/O (https://achoenix.github.io/optical_io/)
+In articles or websites, you may use the following format:  
+Andy Sun, Optical I/O (https://achoenix.github.io/optical_io/)

@@ -27,14 +27,14 @@ How the numbers might be estimated
 | scale-out bandwidth/server | 800 Gb/s | 800 Gb/s ||
 | # of scale-out switch/rack | 1 | 1 ||
 | # of scale-out transceiver/rack  | 72 (36*2) | 72 (36*2) | 800G-link |
-| total # of scale-out transceiver | 140K (147,456) | 140K (147,456) ||
+| total # of scale-out transceiver | 140K (147,456) | 140K (147,456) | clos topology |
 | power /transceiver | 16W  | 16W | 800G-DR OSFP [[e.g. Coherent](https://www.coherent.com/networking/transceivers/datacom/FTCE4517E1PXA)] |
 | **total power of scale-out transceivers** | 2.36 MW | 2.36 MW | |
 | scale-out bandwidth/server | 0        | 1.8 TB/s (18x800Gb/s) | GB-200 |
 | # of scale-up switch (NV switch)/rack | 0 | 18 | GB200 [[ref](https://developer.nvidia.com/blog/nvidia-contributes-nvidia-gb200-nvl72-designs-to-open-compute-project/)] |
 | # of scale-up transceiver/rack  | 0 | 1296 (36*18\*2) | 800G-link |
 | power /transceiver | 16W  | 16W | 800G-SR LPO [[e.g. ]()] |
-| total # of scale-up transceiver | 0 | 2.65M (2,652,208) || 
+| total # of scale-up transceiver | 0 | 2.65M (2,652,208) | full fat-tree topology | 
 | **total power of scale-up transceivers** | 0 | 42.5 MW | |
 
 Note:

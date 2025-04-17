@@ -75,20 +75,43 @@ NVL72 system comes with different designs
 | fully connnected HBM within rack | Yes | No | |
 
 
-## NVIDIA CPO
+## NVIDIA CPO Switch
 
-### CPO Switch
-GTC 2025 Keynote
+<img src="img/nvidia-photonics-quantum-x-spectrum-x-switches.jpg" width="800" />
+
+### GTC 2025 Keynote
+
+Note
 - NVidia will ship Quantum-X (InfiniBand) switch later in 2025, and then a Specturm-X (Ethernet) switch in the second half of 2026.
 - Up to 512 fiber ports on the Spectrum-X switch.
 - 2 optical transceivers per GPU now, 6 optical transceivers per GPU for larger scale with additional layer of switching
 - each transceiver (800G by assumption) costs $1000 and 6W. A 1M GPU datacenter will dedicate 6MW, 10 Rubin Ultra racks for optics
 - 
 
-![Image](https://github.com/user-attachments/assets/60a30901-0052-4e77-aa3c-196377bcd09d)
 
-#### Connectivity comparison
-![Image](https://github.com/user-attachments/assets/5c34ec4a-951b-42de-817a-ff58e0f8c059)
+### Quantum 3450-LD Switch
+
+<img src="img/nvidia-photonics-quantum-x-ports.jpg" width="800" />
+
+Feature
+- 144 ports \@ 800Gb/s, i.e. 115 Tb/s aggregated bandwidth
+- 4 Quantum-X CPO switch ASIC ([More detailes](cpo.md#nvidia))
+
+Available in 2025H2
+
+### Spectrum SN6810 
+
+Feature
+- 128 ports \@ 800Gb/s, i.e. 102.4 Tb/s aggregated bandwidth
+- 1 Spectrum-X CPO switch ASIC ([More detailes](cpo.md#nvidia))
+  - extra unused CPO ports may be used for yield-related backup
+
+### Spectrum SN6800 
+
+Feature
+- 512 ports \@ 800Gb/s, i.e. 409.6 Tb/s aggregated bandwidth
+- 4 Spectrum-X CPO switch ASIC ([More detailes](cpo.md#nvidia))
+  - but 6 is needed for non-blocking (2 ASIC to connect the other 4)
 
 
 ## Information
