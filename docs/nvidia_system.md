@@ -72,6 +72,7 @@ Note:
 ## GB200 NVL72 system
 
 NVL72 system comes with different designs
+
 | System design | MGX | HGX | Note |
 | ------------- | --- | --- | --- |
 | # of CPU/server | 2 | 1 | |
