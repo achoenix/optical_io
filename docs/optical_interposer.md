@@ -1,6 +1,6 @@
 {% include nav.md %}
 
-## [License \& Citation](index.md#license)
+## [License & Citation](index.md#license)
 
 
 # Optical Interposer
