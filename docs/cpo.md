@@ -1,6 +1,6 @@
 ## Navigation
 
-{% include index.md#navigation %}
+{% include nav.md %}
 
 - [Co-Packaged Optics](cpo.md)
     - [NVIDIA Quantum-X CPO](nv_quantumx_cpo.md)
