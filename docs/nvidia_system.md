@@ -1,3 +1,7 @@
+{% include nav.md %}
+
+## [License \& Citation](index.md#license)
+
 # NVIDIA System I/O Analysis
 
 ## Design principles
