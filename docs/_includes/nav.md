@@ -1,3 +1,6 @@
+#### by *Andy Sun* (achoenix@gmail.com)
+#### Updated on 4/25/2025
+
 ## Navigation
 
 - [Homepage](index.html)
