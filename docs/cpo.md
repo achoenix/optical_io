@@ -1,3 +1,18 @@
+## Navigation
+
+{% include index.md#navigation %}
+
+- [Co-Packaged Optics](cpo.md)
+    - [NVIDIA Quantum-X CPO](nv_quantumx_cpo.md)
+- [Optical Interposer](optical_interposer.md)
+- [Optical Transceiver](transceiver.md)
+- [NVIDIA system](nvidia_system.md)
+- [Contact](contact.md)
+
+## [License \& Citation](index.md#license)
+
+
+
 # Co-Packge Optics (CPO)
 
 
@@ -47,3 +62,38 @@ Power savings compared to pluggable transeivers
 
 \* CW laser power consumption estimation: assuming 12mW is fed to each modulator channel, i.e. 80mW for 8 channels. At least two optical coupling in the link which introduces ~5dB loss, i.e. ~300mW laser output power is required. Assuming the wall-plug efficiency of the laser is ~15% (uncooled at 55C), the laser power is ~2W. Assuming the laser is uncooled and the laser driver has a ~60% conversion efficiency, the overall power of is ~3W, i.e.g ~2 pJ/bit for 1.6Tb/s.
 
+## Technical Designs
+
+### Optical Fiber Coupling
+
+#### Senko
+
+<img src="img/Senko_MPC_Metallic_PIC_Connector_.63e16015a9c36.avif" width="600"/>
+
+Senko develops detachable fiber connector for PIC coupling for CPO applications
+
+Key features
+- Curved micro-refector for focusing light into PIC couplers
+- Variations for PIC surface (grating) and edge coupling
+- Detachable
+
+Ref
+- [Lightwaveonline](https://www.lightwaveonline.com/optical-tech/components/article/14289297/senko-advanced-components-inc-metallic-pic-connector)
+
+#### Teramount
+
+<img src="img/teramountpcb_clean.avif" width="600"/>
+
+Teramount’s TeraVERSE provides a detachable and serviceable fiber mounting socket. 
+
+Key features
+- Detachable and serviceable
+- Self-aligning installation
+
+Implementation
+- Fibers connected to the CPO package after all reflows
+- Detachability enables in-field serviceability of faulty fibers
+- Wafer-level testability of PIC
+
+Ref
+- [Lightwaveonline](https://www.lightwaveonline.com/home/article/14305463/teramount-teraverse)

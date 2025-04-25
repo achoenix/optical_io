@@ -27,6 +27,7 @@ If you use or modify this work, you **must** provide proper credit. The preferre
 > **[Optical I/O]** by **[Andy Sun]**, licensed under **CC BY 4.0**.  
 > Original source: [github.com/achoenix/optical_io](https://github.com/achoenix/optical_io/)  
 > License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
+> Email: achoenix@gmail.com
 
 ## How to Cite  
 In articles or websites, you may use the following format:  
