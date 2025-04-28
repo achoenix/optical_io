@@ -24,4 +24,4 @@ If you use or modify this work, you **must** provide proper credit. The preferre
 
 ## How to Cite  
 In articles or websites, you may use the following format:  
-Andy Sun, Optical I/O (https://achoenix.github.io/optical_io/)
+Andy Sun, *Optical I/O* (https://achoenix.github.io/optical_io/)

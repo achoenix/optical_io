@@ -2,7 +2,7 @@
 
 ## [License & Citation](index.md#license)
 
-# NVIDIA System I/O Analysis
+# NVIDIA System Interconnect Analysis
 
 ## Design principles
 - AI workloads is latency and bandwidth sensitive
@@ -61,12 +61,12 @@ Note:
 
 Note:
 - System power consumption varies from different sources:
-  - B200 NVL72 System: Each DGX B200 unit, housing eight B200 GPUs, consumes approximately 14.3 kW. In a standard data center setup, this translates to around 60 kW per rack. [AMAX ENGINEERING](https://www.amax.com/comparing-nvidia-blackwell-configurations/?utm_source=chatgpt.com)
+  - B200 NVL72 System: Each DGX B200 unit, housing eight B200 GPUs, consumes approximately 14.3 kW. In a standard data center setup, this translates to around 60 kW per rack. [[AMAX ENGINEERING](https://www.amax.com/comparing-nvidia-blackwell-configurations/?utm_source=chatgpt.com)]
   - GB200 NVL72 System: The GB200 NVL72 rack, comprising 72 GB200 GPUs, has a total power consumption of approximately 120 kW.[CONTINUUM LABS](https://training.continuumlabs.ai/infrastructure/servers-and-chips/nvidia-gb200-nvl72?utm_source=chatgpt.com)
 - Since Rubin, the # of GPUs are counted as the # of dies inside a GPU package. This causes confusions for comparison. For example, B300 NVL72 has 72 B300 GPUs with 144 GPU dies (2 dies per GPU packages) while Rubin NVL144 has 144 CPU dies in 72 GPU packages and Rubin Ultra NVL576 has 576 GPU dies in 144 GPU packages. 
 - Memory bandwidth numbers for Rubin systems shown in GTC 2025 Keynote are not consistent for per GPU and total
 - Memory capacity of Rubin Ultra shown in GTC 2025 Keynote are not consistent for per GPU and total
-- NVLink 6 bandwidth and ConnextX-9 bandwidth are adopted from source [guru3d](https://www.guru3d.com/story/nvidia-confirms-nextgeneration-architecture-is-based-on-vera-rubin-gpu/)
+- NVLink 6 bandwidth and ConnextX-9 bandwidth are adopted from source [[guru3d](https://www.guru3d.com/story/nvidia-confirms-nextgeneration-architecture-is-based-on-vera-rubin-gpu/)]
 
 
 ## GB200 NVL72 system
@@ -123,11 +123,11 @@ Feature
 ### GTC 2025
 
 
-## Reference
-- https://www.nextplatform.com/2025/03/18/nvidia-weaves-silicon-photonics-into-infiniband-and-ethernet/
-- https://arstechnica.com/ai/2025/03/nvidia-announces-rubin-ultra-and-feynman-ai-chips-for-2027-and-2028/
-- https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-gpus-in-2026-rubin-ultra-in-2027-feynam-after
-- https://www.servethehome.com/nvidia-gtc-2025-keynote-live-coverage/
-- https://www.theverge.com/news/631835/nvidia-blackwell-ultra-ai-chip-gb300
-- https://mp.weixin.qq.com/s/Fm6hFvHygsx0IcQ27G73Xw
+#### Reference
+- [NextPlatform](https://www.nextplatform.com/2025/03/18/nvidia-weaves-silicon-photonics-into-infiniband-and-ethernet/)
+- [Arstechnica](https://arstechnica.com/ai/2025/03/nvidia-announces-rubin-ultra-and-feynman-ai-chips-for-2027-and-2028/)
+- [tomshardware](https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-gpus-in-2026-rubin-ultra-in-2027-feynam-after)
+- [ServeTheHome](https://www.servethehome.com/nvidia-gtc-2025-keynote-live-coverage/)
+- [theVerge](https://www.theverge.com/news/631835/nvidia-blackwell-ultra-ai-chip-gb300)
+- [QQ](https://mp.weixin.qq.com/s/Fm6hFvHygsx0IcQ27G73Xw)
 
