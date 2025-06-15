@@ -6,6 +6,17 @@
 
 ## Market 
 
+### LightCounting Update
+#### 25Q2 update (25/06/12)
+![LightCounting](img/lightcounting_250612.png)
+Notes
+- 400G Ethernet modules declines as Amazon and Meta transition to higher speed
+- Sales of 400G and 800G AOCs will also remain strong
+- Alphabet, Amazon, Meta, Microsoft, and Oracle (in order) spend more in 25Q1 than 24Q1
+- Oracle's spending was up 233%, Q1 reached a record $5.6 billion
+- Alibaba plans to invest $53 billion in AI infra over 3 years
+- Tencent spent $3.7 billion 25Q1
+
 ### 800G market shares
 
 #### [Cignal AI 24/Q3 report (1/7/2025)](https://cignal.ai/2025/01/over-20-million-400g-800g-datacom-optical-module-shipments-expected-for-2024/)
