@@ -7,6 +7,7 @@
 ## Market 
 
 ### LightCounting Update
+
 #### 25Q2 update (25/06/12)
 ![LightCounting](img/lightcounting_250612.png)
 Notes
@@ -31,6 +32,7 @@ A comparision between cloud datacenter and AI datacenter from Shainer:
 ![Shainer](img/nvidia-photonics-cloud-versus-ai.jpg "Shainer")
 
 How the numbers might be estimated
+
 |                   | Cloud datacenter | AI datacenter |  Note |
 |-------------------|       -----------| ------------ | ---   |
 | # of servers      | 72k (73,728)     | 72k (73,728) ||
