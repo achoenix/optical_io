@@ -1,14 +1,15 @@
 #### by *Andy Sun* (achoenix@gmail.com)
 
-*Last update: 2025/06/18*
+*Last update: 2025/10/04*
 
 ## Navigation
 
 - [Homepage](index.html)
 - [Silicon Photonics]()
-    - [TSMC_COUPE](tsmc_coupe.html)
+    - [TSMC](tsmc_pic.html)
 - [Co-Packaged Optics](cpo.html)
     - [NVIDIA Quantum-X CPO](nv_quantumx_cpo.html)
+    - [Light Source](cpo_laser.html)
 - [Optical Interposer](optical_interposer.html)
 - [Optical Transceiver](transceiver.html)
 - [AI Chip](ai_chip.html)
