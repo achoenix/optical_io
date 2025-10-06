@@ -14,7 +14,22 @@
     - [CW-WDM](#cw-wdm)
     - [OIF-ELSFP](#oif-elsfp)
     - [IPEC-PELS](#ipec-pels)
+    - [OIF-Co-Packaging-3.2T](#oif-co-packaging-32t)
 - [Suppliers](#suppliers)
+    - [Accelink](#accelink)
+    - [AOI](#aoi)
+    - [Broadcom](#broadcom)
+    - [Casela](#casela)
+    - [Coherent (II-VI)](#coherent-ii-vi)
+    - [Furukawa (Fitel)](#furukawa-electric-fitel)
+    - [HGTech](#hgtech)
+    - [Lumentum](#lumentum)
+    - [O-net](#o-net)
+    - [Shijia](#shijia)
+    - [Terahop (Innolight)](#terahop-innolight)
+    - [YuanJie](#yuanjie)
+
+
 
 <br>
 
@@ -123,21 +138,157 @@ Table 2–5 Grid specifications
 <br>
 
 
+### OIF-Co-Packaging-3.2T
+
+
+<br>
+
+
 ---
 
 ## Suppliers
 
 <br>
 
+### Accelink
+*光迅科技*
+
+#### Product
+
+**[Press Release (2025/09)](https://www.accelink.com/lighting_your_dreams/1966343233298509826.html)**
+- ELSFP Module
+    - >20dBm/CH
+    - for 3.2Tbps optical engine
+
+<br>
+
+
+### AOI
+
+#### Product
+
+**[ECOC Interop (2022)]**
+- ELSFP module
+    - 8CH, CWDM
+    - 19.5dBm/CH
+    - Power consumption: <12W @ 55°C
+    - TEC Cooled
+
+**[OFC Interop (2022)]**
+- ELSFP module
+    - 8CH, CWDM
+    - 18dBm/CH
+    - Power consumption: <12W @ 55°C, <15W @70°C
+    - TEC Cooled
+
+<br>
+
+
+### Broadcom
+
+#### Product
+
+**[Product Page](https://www.broadcom.com/products/fiber-optic-modules-components/co-packaged-optics/pluggable-laser-sources/arlm-96f8dmz)**
+- QSFP-DD 800-mW CWDM Laser Module
+    - 8CH, 100mW/CH
+    - 0°C to 45°C case temperature
+    - Lifecycle Status: Limited Release
+
+<br>
+
+
+### Casela
+*南京镭芯光电*
+
+#### Product
+
+**[Product Page](https://www.caselatech.com/news/11.html)**
+- ELSFP Module
+    - 8x 20dBm output
+- ELS subassembly
+    - 150mW/CH in 4x PMF
+- Uncooled 1310nm (and CWDM) CW DFB lasers
+    - 100-200mW
+    - 20% WPE @70C
+
+<br>
+
+
+### Coherent (II-VI)
+
+#### Product
+
+**[Press Release (2025/09)](https://www.coherent.com/news/press-releases/coherent-showcases-next-generation-optical-innovations-at-ecoc2025)**
+- 400mW CW DFB Laser
+- ELSFP Module
+    - 8 CW Laser, BH DFB
+    - wavelength accuracy and linewidth control
+
+<br>
+
+
+### Furukawa Electric (Fitel)
+
+#### Product
+
+**[Press Release (2024 OFC)](https://www.ofsoptics.com/the-worlds-first-100-mw-optical-power-x-16-channel-blind-mate-els-for-co-packaged-optics/?srsltid=AfmBOopTES695AE4aRA-0JgZfFSaZ1XOma9mfwf2LWFppVL2L_yrO9pz)**
+- ELS module
+    - 16CH, 20dBm/CH
+    - in-house DFB lasers
+        - Option 1: 1311nm x 8
+        - Option 2: 4-1 CWDM x 2
+    - 2x 8CH-TOSA, TOSA size: 22.5 mm(L) x 13.0 mm(W) x 3.3 mm(H)
+    - case temperature 25-55 °C
+    - Power consumption: <13W
+
+<br>
+
+
+### HGTech
+*华工正源*
+
+#### Product
+
+**[Press Release (2025/09)](https://www.hgtech.com.cn/gsxw/4269.jhtml)**
+- ELSFP Module (Gen2)
+    - DWDM
+    - Based on Si photonics quantum dot comb laser
+
+<br>
+
+
+### Lumentum
+
+#### Product
+
+**[Press Release (2025/09)](https://www.lumentum.com/en/media-room/news-releases/lumentum-showcases-new-products-and-technologies-ecoc-2025-ai-and-data)**
+- ELSFP Module
+    - ultra-high-power (UHP) 1310 nm lasers
+
+**[OFC Interop (2023/03)]()**
+- high power 1310nm DFB laser
+    - 500mW cooled, 200mW uncooled
+    - modified from 14xx Raman pump laser technology
+    - supports other CWDM wavelengths
+
+<br>
+
+
 ### O-Net
 
 #### Product
 
 **[Product Page](http://n.o-netcom.com/m/prod_view.aspx?TypeId=106&Id=322&Fid=t3:106:3)**
-- Class VHP (20dBm/λ/fiber) (once marketing a 25dBm version)
-- 4 or 8 channels
-- Cooled or Uncooled laser (1311nm)
-- 2x DR4 or 2x FR4 configurations
+- ELSFP Module
+    - Class VHP (20dBm/λ/fiber) (once marketing a 25dBm version)
+    - 4 or 8 channels
+    - Cooled or Uncooled laser (1310nm)
+    - 2x DR4 or 2x FR4 configurations
+
+**[Press Release (2025/09)](http://www.c-fol.net/news/3_202509/20250912110953.html)
+- ELSFP Module
+    - 25dBm output
+    - 12.5% WPE (0-50C)
 
 #### Partnership
 
@@ -150,4 +301,61 @@ Table 2–5 Grid specifications
 - [Press Release (2023/04)](https://www.lumentum.com/en/media-room/news-releases/scaling-photonics-new-heights-lumentum-ofc-2023)
 - Lumentum: ultra high power 1310nm DFB provider
 - O-Net: (active) ELSFP module provider
+
+<br>
+
+
+### Pilot Photonics
+
+#### Product
+
+**[Product Page](https://www.pilotphotonics.com/products/#product3)**
+- ELS Module
+    - 16 wavelength CW comb laser
+    - 14dBm/CH
+    - 200GHz WDM
+
+<br>
+
+
+### Shijia
+*仕佳光子*
+
+#### Product
+
+**[Product Page](https://www.sjphotons.com.cn/solutions/detail/4)**
+- 1310nm DFB CW Laser
+    - 125mW 
+    - 0-75℃
+
+**[Press Release](https://www.stcn.com/article/detail/2874053.html)**
+- 1310nm DFB CW Laser
+    - 500mW
+    - Sampling
+
+
+### Terahop (Innolight)
+*中际旭创*
+
+#### Product
+
+**[ECOC Interop (2025/09)]()**
+- ELSFP Module
+    - 8CH, 24dBm/CH
+
+<br>
+
+
+### YUANJIE
+*源杰科技*
+
+#### Product
+
+**[Market Research](https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=688498&id=11422477)
+- High power 1310nm DFB CW Laser
+    - 150mW (R&D)
+
+<br>
+
+
 
