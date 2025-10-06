@@ -148,6 +148,30 @@ Table 2–5 Grid specifications
 
 ## Suppliers
 
+### Summary
+
+**Comparison**
+
+| Company | Product | Features | Status(1) |
+| - | - | - | 
+| Accelink 光迅 | ELSFP Module | >20dBm/CH | PR (2025) |
+| AOI | ELSFP module | 8CH, CWDM, 19.5dBm/CH, Cooled, 12W@55°C | Demo (2022) |
+| Broadcom | QSFP-DD module | 8CH, 1310nm, 20dBm/CH, 0-45°C | Product, Limited Release | 
+| Casela (镭芯) | ELSFP Module <br> DFB laser | 8CH 20dBm, 1310nm, <br> 200mW, 20% WPE@70°C | Product |
+| Coherent (II-VI) | ELSFP module <br> DFB laser | 8x 1310nm Laser <br> 400mW  | PR (2025) | 
+| Furukawa | ELS module | 16CH, 1310nm, 20dBm/CH, <13W, 25-55°C | Demo (2024) | 
+| HGTech (华工正源) | ELSFP Module | 1310nm 200GHz DWDM, QD comb laser | PR (2025) |
+| Lumentum | ELSFP Module <br> DFB laser | UHP? (23dBm), 1310nm <br> 500mW cooled, 200mW uncooled | Demo (2023) | 
+| O-net (昂纳) | ELSFP Module | 4-8 CH, 1310nm, 20dBm/λ/fiber, 25dBm (PR) | Demo (2025) | 
+| Pilot | ELS Module | 16 wavelength comb laser, 14dBm/CH, 1310nm 200GHz DWDM | Product | 
+| Shijia (仕佳) | DFB laser | 1310nm, 125mW, 0-75℃ <br> 500mW | Product <br> Sampling |
+| Terahop (旭创) | ELSFP Module | 8CH, 24dBm/CH | Demo (2025) | 
+| YUANJIE (源杰) | DFB laser | 150mW | R&D PR (2025) | 
+
+
+
+- (1): As of 2025/09
+
 <br>
 
 ### Accelink
@@ -275,6 +299,7 @@ Table 2–5 Grid specifications
 
 
 ### O-Net
+*昂纳*
 
 #### Product
 
@@ -313,7 +338,7 @@ Table 2–5 Grid specifications
 - ELS Module
     - 16 wavelength CW comb laser
     - 14dBm/CH
-    - 200GHz WDM
+    - 200GHz DWDM
 
 <br>
 
