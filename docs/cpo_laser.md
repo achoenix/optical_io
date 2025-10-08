@@ -153,7 +153,7 @@ Table 2–5 Grid specifications
 **Comparison**
 
 | Company | Product | Features | Status(1) |
-| - | - | - | 
+| - | - | - | - |
 | Accelink 光迅 | ELSFP Module | >20dBm/CH | PR (2025) |
 | AOI | ELSFP module | 8CH, CWDM, 19.5dBm/CH, Cooled, 12W@55°C | Demo (2022) |
 | Broadcom | QSFP-DD module | 8CH, 1310nm, 20dBm/CH, 0-45°C | Product, Limited Release | 
