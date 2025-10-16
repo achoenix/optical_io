@@ -1,7 +1,5 @@
 {% include nav.md %}
 
-## [License & Citation](index.md#license)
-
 # Optical Transceivers
 
 ## Market 

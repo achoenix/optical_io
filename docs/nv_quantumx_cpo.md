@@ -1,6 +1,5 @@
 {% include nav.md %}
 
-## [License & Citation](index.md#license)
 
 # NVIDIA Quantum-X Switch CPO
 

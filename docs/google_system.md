@@ -1,6 +1,5 @@
 {% include nav.md %}
 
-## [License & Citation](index.md#license)
 
 # Google System Interconnect Analysis
 

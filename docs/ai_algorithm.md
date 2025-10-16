@@ -1,7 +1,5 @@
 {% include nav.md %}
 
-## [License & Citation](index.md#license)
-
 # AI/ML Algorithm
 
 Effect of AI/ML algorithm on computing and networking architecture

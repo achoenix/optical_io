@@ -1,7 +1,5 @@
 {% include nav.md %}
 
-## [License & Citation](index.md#license)
-
 # NVIDIA System Interconnect Analysis
 
 ## Design principles
