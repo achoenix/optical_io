@@ -1,6 +1,10 @@
 {% include nav.md %}
 
-# NVIDIA System Interconnect Analysis
+<br>
+
+
+
+# NVIDIA System
 
 ## Design principles
 - AI workloads is latency and bandwidth sensitive

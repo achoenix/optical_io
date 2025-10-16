@@ -1,9 +1,9 @@
 {% include nav.md %}
 
 
-# NVIDIA Quantum-X Switch CPO
+# NVIDIA CPO
 
-## Quantum-X Switch
+## Quantum-X Switch CPO
 
 <!-- ![NV CPO Switch](img/nv_quantumx_spectrumx.png) -->
 <img src="img/nv_quantumx_spectrumx.png" width="600"/>
