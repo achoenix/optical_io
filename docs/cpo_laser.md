@@ -5,7 +5,7 @@
 <br>
 
 
-# External Light Source for CPO
+# CPO Light Source
 
 
 ## Navigation
