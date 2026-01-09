@@ -2,17 +2,24 @@
 
 <br>
 
-
-
 # NVIDIA System
 
-## Design principles
-- AI workloads is latency and bandwidth sensitive
-- switching (both scale-up and scale-out) becomes more important
-- copper vs optics is power consumption-driven
 
 
-## GPU & System comparison
+## Navigation
+
+- [Comparison Summary](#comparison-summary)
+  - [GPU Comparison](#gpu-comparison)
+  - [System Comparison](#system-comparison)
+- [GB200 NVL72](#gb200-nvl72)
+- [CPO Switch](#cpo-switch)
+- [Information](#information)
+  - [26Q1 Earning Call](#26q1-earning-call)
+  - [2025 GTC](#gtc-2025)
+
+
+
+## Comparison Summary
 
 ### GPU comparison
 
@@ -37,7 +44,10 @@ Note:
   - GB200 Superchip Configuration: When integrated into the GB200 Superchip, a single B200 GPU can have a configurable TDP of up to 1,200W, with the entire superchip (comprising two B200 GPUs and one Grace CPU) reaching up to 2,700W.
 - Rubin HBM bandwidth is sourced from: [[theregister](https://www.theregister.com/2025/03/29/nvidia_moores_law/)]
 
-### GPU rack system comparison
+
+<br>
+
+### System Comparison
 
 | Specification                  | H100 NVL8 | Blackwell NVL72 | Blackwell Ultra NVL72 | Rubin NVL144 | Rubin Ultra NVL576 |
 |--------------------------------|-----------|------------|------------|--------------|--------------|
@@ -71,7 +81,15 @@ Note:
 - NVLink 6 bandwidth and ConnextX-9 bandwidth are adopted from source [[guru3d](https://www.guru3d.com/story/nvidia-confirms-nextgeneration-architecture-is-based-on-vera-rubin-gpu/)]
 
 
-## GB200 NVL72 system
+
+<br>
+
+---
+
+<br>
+
+
+## GB200 NVL72
 
 NVL72 system comes with different designs
 
@@ -82,7 +100,13 @@ NVL72 system comes with different designs
 | fully connnected HBM within rack | Yes | No | |
 
 
-## NVIDIA CPO Switch
+<br>
+
+---
+
+<br>
+
+## CPO Switch
 
 <img src="img/nvidia-photonics-quantum-x-spectrum-x-switches.jpg" width="800" />
 
@@ -121,9 +145,6 @@ Feature
   - but 6 is needed for non-blocking (2 ASIC to connect the other 4)
 
 
-## Information
-### GTC 2025
-
 
 #### Reference
 - [NextPlatform](https://www.nextplatform.com/2025/03/18/nvidia-weaves-silicon-photonics-into-infiniband-and-ethernet/)
@@ -132,4 +153,39 @@ Feature
 - [ServeTheHome](https://www.servethehome.com/nvidia-gtc-2025-keynote-live-coverage/)
 - [theVerge](https://www.theverge.com/news/631835/nvidia-blackwell-ultra-ai-chip-gb300)
 - [QQ](https://mp.weixin.qq.com/s/Fm6hFvHygsx0IcQ27G73Xw)
+
+
+
+<br>
+
+---
+
+<br>
+
+## Information
+
+<br>
+
+### 26Q1 Earning Call 
+
+- **Vera Rubin delivery time**
+  - Huang: 3nm production leadtime >9month
+  - Note: from wafer-in to CoWoS out. CoWoS may take a month
+  - Note: meaningful delivery may start 27Q1
+
+- **Rubin CPX GDDR7 vs Groq's SRAM approach**
+  - Huang: CPX runs prefill more efficiently while SRAM is faster than HBM but 1/100 in capacity thus only for certain workload
+  - Huang: AI workloads vary enormously and need flexibility for TCO
+
+
+
+#### Reference
+- [Tech Taiwan](https://cwnewsroom.substack.com/p/exclusive-jensen-huangs-remark-spark-storage-rally-phison-ceo-respond-from-ces)
+
+
+
+<br>
+
+### GTC 2025
+
 
