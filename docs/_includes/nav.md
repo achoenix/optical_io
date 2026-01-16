@@ -13,6 +13,7 @@
     - [Coupling](cpo_coupling.html#cpo-optical-coupling)
 - [Optical Interposer](optical_interposer.html#optical-interposer)
 - [Optical Transceiver](transceiver.html#optical-transceivers)
+- [Optical Circuit Switch](ocs.html#optical-circuit-switch)
 - [AI Chip](ai_chip.html#ai-chips)
 - [System Design](system.html#ai-systems)
     - [NVIDIA System](nvidia_system.html#nvidia-system)
