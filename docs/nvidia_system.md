@@ -117,7 +117,7 @@ Note:
 
 #### Compute Blade
 
-<img src="img/nv_ces2026/kyber_compute.png" />
+<img src="img/nv_ces2026/kyber_compute.png" width="500" />
 
 **Feature**
 - Cable-less design
@@ -127,7 +127,7 @@ Note:
 
 #### Switch Blade
 
-<img src="img/nv_ces2026/kyber_switch.png" />
+<img src="img/nv_ces2026/kyber_switch.png" width="500" />
 
 **Feature**
 - Cable-free design
@@ -147,7 +147,7 @@ Note:
 
 #### Compute Tray
 
-<img src="img/nv_ces2026/vr_compute.png" />
+<img src="img/nv_ces2026/vr_compute.png" width="500" />
 
 **Feature**
 - 200 PFOLPS AI compute
@@ -161,7 +161,7 @@ Note:
 
 #### Switch Tray
 
-<img src="img/nv_ces2026/vr_switch.png" />
+<img src="img/nv_ces2026/vr_switch.png" width="500" />
 
 **Feature**
 - Cable-free modular design
@@ -199,7 +199,7 @@ Note:
 
 #### Compute Tray
 
-<img src="img/nv_ces2026/gb300_nvl72_compute.png" />
+<img src="img/nv_ces2026/gb300_nvl72_compute.png" width="500" />
 
 **Feature**
 - 4 Blackwell Ultra GPUs
@@ -213,7 +213,7 @@ Note:
 
 #### Switch Tray
 
-<img src="img/nv_ces2026/gb300_nvl72_switch.png" />
+<img src="img/nv_ces2026/gb300_nvl72_switch.png" width="500" />
 
 **Feature**
 - 2 NVLink-5 switch chips
@@ -267,11 +267,11 @@ NVL72 system comes with different designs
 **Quantum-X InfiniBand CPO Switch**
 
 
-<img src="img/nv_ces2026/quantum_x.png" width="600" />
+<img src="img/nv_ces2026/quantum_x.png" width="500" />
 
 <br>
 
-<img src="img/nvidia-photonics-quantum-x-ports.jpg" width="600" />
+<img src="img/nvidia-photonics-quantum-x-ports.jpg" width="500" />
 
 
 #### Spectrum 3450-LD
