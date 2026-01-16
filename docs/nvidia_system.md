@@ -11,11 +11,15 @@
 - [Comparison Summary](#comparison-summary)
   - [GPU Comparison](#gpu-comparison)
   - [System Comparison](#system-comparison)
-- [GB200 NVL72](#gb200-nvl72)
+- [Rack System](#rack-system)
+  - [GB200 NVL72](#gb200-nvl72)
 - [CPO Switch](#cpo-switch)
+  - [Quantum-X](#quantum-x)
+  - [Spectrum-X](#spectrum-x)
 - [Information](#information)
   - [26Q1 Earning Call](#26q1-earning-call)
   - [2025 GTC](#gtc-2025)
+
 
 
 
@@ -23,18 +27,21 @@
 
 ### GPU comparison
 
-| Specification                  | H100          | B100                                 | B200                                 | B300                                 | Rubin         | Rubin Ultra    |
-|----------------------|---------------|--------------------------------------|--------------------------------------|--------------------------------------|---------------|---------------|
-| **Architecture**     | Hopper        | Blackwell                            | Blackwell                            | Blackwell Ultra                      | Rubin         | Rubin Ultra    |
-| **Process Node**     | TSMC 4N       | TSMC 4NP                             | TSMC 4NP                             | TSMC 4NP                             | Not specified | Not specified |
-| **Chip Packaging**   | Monolithic    | Dual GB100 dies with NV-HBI          | 2 GB100 dies with NV-HBI             | 2 GB100 dies with NV-HBI             | 2 Rubin dies with NV-HBI | 4 Rubin dies with NV-HBI  |
-| **FP4 Tensor**       | Not supported | 7 PFLOPS (dense) <br> 14 PFLOPS (sparse) | 10 PFLOPS (dense) <br> 20 PFLOPS (sparse) | 15 PFLOPS (dense) <br> 30 PFLOPS (sparse) | 50 PFLOPS | 100 PFLOPS |
-| **INT8 Tensor**      | 0.4 P-OPS     | 3.5 P-OPS (dense) <br> 7 P-OPS (sparse) | 5 P-OPS (dense) <br> 9 P-OPS (sparse) | 7.5 P-OPS (dense), 15 P-OPS (sparse) | Not specified | Not specified |
-| **FP16 Tensor**      | 0.2 PFLOPS    | 1.85 PFLOPS (dense) <br> 3.5 PFLOPS (sparse) | 2.5 PFLOPS (dense) <br> 4.5 PFLOPS (sparse) | 3.75 PFLOPS (dense) <br> 7.5 PFLOPS (sparse) | Not specified | Not specified |
-| **FP64**             | 34 TFLOPS     | 30 TFLOPS                            | 40 TFLOPS                            | 68 TFLOPS                            | Not specified | Not specified |
-| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                         | 192 GB HBM3e                          | 288 GB HBM3e                        | 288 GB HBM4 | 1 TB HBM4e |
-| **Memory Bandwidth** | 3.2 TB/s      | Up to 8 TB/s （4Tb/s /die)           | Up to 8 TB/s  （4Tb/s /die)           | Up to 8 TB/s    （4Tb/s /die)       | 8 TB/s /die | 8 TB/s /die |
-| **Power (TDP)**      | 700W          | 700W                                 | 1,000W                                | Not specified                       | Not specified | Not specified |
+| Specification        | H100          | B100                                         | B200                                        | B300                                         | Rubin                                   | Rubin Ultra    |
+|----------------------|---------------|--------------------------------------        |--------------------------------------       |--------------------------------------        |---------------                          |---------------|
+| **Image**            |               |                                              |                                             |                                              | <img src="img/nv_ces2026/rubin_gpu.png" width="100"/> |      |
+| **Architecture**     | Hopper        | Blackwell                                    | Blackwell                                   | Blackwell Ultra                              | Rubin                                   | Rubin Ultra    |
+| **Process Node**     | TSMC 4N       | TSMC 4NP                                     | TSMC 4NP                                    | TSMC 4NP                                     | Not specified                           | Not specified |
+| **Chip Packaging**   | Monolithic    | Dual GB100 dies with NV-HBI                  | 2 GB100 dies with NV-HBI                    | 2 GB100 dies with NV-HBI                     | 2 Rubin dies with NV-HBI                | 4 Rubin dies with NV-HBI  |
+| **FP4 Tensor**       | Not supported | 7 PFLOPS (dense) <br> 14 PFLOPS (sparse)     | 10 PFLOPS (dense) <br> 20 PFLOPS (sparse)   | 15 PFLOPS (dense) <br> 30 PFLOPS (sparse)    | 50 PFLOPS (inf) <br> 35 PFLOPS (train)  | 100 PFLOPS  |
+| **INT8 Tensor**      | 0.4 P-OPS     | 3.5 P-OPS (dense) <br> 7 P-OPS (sparse)      | 5 P-OPS (dense) <br> 9 P-OPS (sparse)       | 7.5 P-OPS (dense), 15 P-OPS (sparse)         | Not specified                           | Not specified |
+| **FP16 Tensor**      | 0.2 PFLOPS    | 1.85 PFLOPS (dense) <br> 3.5 PFLOPS (sparse) | 2.5 PFLOPS (dense) <br> 4.5 PFLOPS (sparse) | 3.75 PFLOPS (dense) <br> 7.5 PFLOPS (sparse) | Not specified                           | Not specified |
+| **FP64**             | 34 TFLOPS     | 30 TFLOPS                                    | 40 TFLOPS                                   | 68 TFLOPS                                    | Not specified                           | Not specified |
+| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                                 | 192 GB HBM3e                                | 288 GB HBM3e                                 | 288 GB HBM4                             | 1 TB HBM4e |
+| **Memory Bandwidth** | 3.2 TB/s      | Up to 8 TB/s (4Tb/s /die)                    | Up to 8 TB/s (4Tb/s /die)                   | Up to 8 TB/s (4Tb/s /die)                    | 22 TB/s (total)                         | 8 TB/s /die |
+| **NVLink Bandwidth** | 900 GB/s      | 1.8 TB/s                                     | 1.8 TB/s                                    | 1.8 TB/s                                     | 3.6 TB/s                                |              |
+| **Power (TDP)**      | 700W          | 700W                                         | 1,000W                                      | Not specified                                | Not specified                           | Not specified |
+
 
 
 Note:
@@ -49,27 +56,27 @@ Note:
 
 ### System Comparison
 
-| Specification                  | H100 NVL8 | Blackwell NVL72 | Blackwell Ultra NVL72 | Rubin NVL144 | Rubin Ultra NVL576 |
-|--------------------------------|-----------|------------|------------|--------------|--------------|
-| **Number of Trays**            | N/A       | 36         | 36         | 36           | 36           |
-| **GPU**                        | H100      | B100/B200  | B300       | Rubin        | Rubin Ultra  |
-| **Number of GPUs**             | 8         | 72 (144 dies) | 72 (144 dies) | 144 dies | 576 dies   |
-| **CPU**                        | Grace     | Grace      | Grace      | Vera         | Vera         |
-| **Number of CPUs**             | N/A       | 18/36      | 36         | 36?          | 36?          |
-| **CPU-GPU Bandwidth**          |  TB/s  |  TB/s |  TB/s | 1.8 TB/s | 1.8 TB/s |
-| **Memory Capacity per GPU**    | 94 GB HBM3 | 192 GB HBM3e | 288 GB HBM3e | 520 GB HBM4 | 1 TB HBM4e |
-| **Total Memory Capacity**      | 752 GB    | 13.824 TB | 20.736 TB | 75 TB | 365 TB (inconsistent with 1TB*144) |
-| **Memory Bandwidth per GPU**   | 3.9 TB/s  | 8 TB/s | 8 TB/s | 13 TB/s | ? TB/s |
-| **Total Memory Bandwidth**     | 31.2 TB/s | 576 TB/s | 576 TB/s | ? TB/s | 4500 TB/s |
-| **Scale-Up Interconnect**      | NVLink 4  | NVLink 5 | NVLink 5 | NVLink 6 | NVLink 7 |
-| **Scale-Up Interconnect BW per GPU** | 900 GB/s (18x4x100Gb/s) | 1.8 TB/s (18x4x200Gb/s) | 1.8 TB/s | 3.6 TB/s (18x4x400Gb/s?) | ? TB/s (?) |
-| **Total Scale-Up Bandwidth**  | 7.2 TB/s | 129.6 TB/s | 129.6 TB/s | 260 TB/s | 1.5 PB/s |
-| **Server NIC**                 |     |   | ConnectX-8 (800Gb/s) | ConnectX-9 (1.6Tb/s) | ConnectX-9 (1.6T/s) |
-| **Scale-Out Interconnect**     | Not specified | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet | InfiniBand/Ethernet |
-| **Total Scale-Out Bandwidth**  |  TB/s |  TB/s | 14.4 TB/s （144x800Gb/s) | 28.8 TB/s (144x1.6Tb/s) | 115.2 TB/s (576x1.6Tb/s?) |
-| **Total Rank System Power**    | 60 kW | 72-120 kW | ? | ? | 600 kW |
-| **FP4 Dense Inference**        | PLFOPS |  PFLOPS | 1.1 EFLOPS | 3.6 EFLOPS | 15 EFLOPS |
-| **FP8 Training**               | PLFOPS |  PFLOPS | 0.36 EFLOPS | 1.2 EFLOPS | 5 EFLOPS |
+| Specification                  | H100 NVL8               | Blackwell NVL72         | Blackwell Ultra NVL72   | Rubin NVL144             | Rubin Ultra NVL576 |
+|--------------------------------|-----------              |------------             |------------             |--------------            |--------------|
+| **Number of Trays**            | N/A                     | 36                      | 36                      | 36                       | 36           |
+| **GPU**                        | H100                    | B100/B200               | B300                    | Rubin                    | Rubin Ultra  |
+| **Number of GPUs**             | 8                       | 72 (144 dies)           | 72 (144 dies)           | 144 dies                 | 576 dies   |
+| **CPU**                        | Grace                   | Grace                   | Grace                   | Vera                     | Vera         |
+| **Number of CPUs**             | N/A                     | 18/36                   | 36                      | 36?                      | 36?          |
+| **CPU-GPU Bandwidth**          |  TB/s                   |  TB/s                   |  TB/s                   | 1.8 TB/s                 | 1.8 TB/s |
+| **Memory Capacity per GPU**    | 94 GB HBM3              | 192 GB HBM3e            | 288 GB HBM3e            | 520 GB HBM4              | 1 TB HBM4e |
+| **Total Memory Capacity**      | 752 GB                  | 13.824 TB               | 20.736 TB               | 75 TB                    | 365 TB (inconsistent with 1TB*144) |
+| **Memory Bandwidth per GPU**   | 3.9 TB/s                | 8 TB/s                  | 8 TB/s                  | 13 TB/s                  | ? TB/s |
+| **Total Memory Bandwidth**     | 31.2 TB/s               | 576 TB/s                | 576 TB/s                | ? TB/s                   | 4500 TB/s |
+| **Scale-Up Interconnect**      | NVLink 4                | NVLink 5                | NVLink 5                | NVLink 6                 | NVLink 7 |
+| **Scale-Up BW per GPU**        | 900 GB/s (18x4x100Gb/s) | 1.8 TB/s (18x4x200Gb/s) | 1.8 TB/s (18x4x200Gb/s) | 3.6 TB/s (18x4x400Gb/s)  | ? TB/s (?) |
+| **Total Scale-Up Bandwidth**   | 7.2 TB/s                | 129.6 TB/s              | 129.6 TB/s              | 260 TB/s                 | 1.5 PB/s |
+| **Server NIC**                 |                         |                         | ConnectX-8 (800Gb/s)    | ConnectX-9 (1.6Tb/s)     | ConnectX-9 (1.6T/s) |
+| **Scale-Out Interconnect**     | Not specified           | InfiniBand/Ethernet     | InfiniBand/Ethernet     | InfiniBand/Ethernet      | InfiniBand/Ethernet |
+| **Total Scale-Out Bandwidth**  |                    TB/s |                    TB/s | 14.4 TB/s (144x800Gb/s) | 28.8 TB/s (144x1.6Tb/s)  | 115.2 TB/s (576x1.6Tb/s?) |
+| **Total Rank System Power**    | 60 kW                   | 72-120 kW               | ?                       | ?                        | 600 kW |
+| **FP4 Dense Inference**        | PLFOPS                  |  PFLOPS                 | 1.1 EFLOPS | 3.6 EFLOPS | 15 EFLOPS                |
+| **FP8 Training**               | PLFOPS                  |  PFLOPS                 | 0.36 EFLOPS             | 1.2 EFLOPS               | 5 EFLOPS |
 
 Note:
 - System power consumption varies from different sources:
@@ -89,7 +96,64 @@ Note:
 <br>
 
 
-## GB200 NVL72
+## Rack System
+
+<br>
+
+### Vera Rubin NVL72
+
+<img src="img/nv_ces2026/vr_nlv72.png" width="200" />
+
+
+#### Compute Tray
+
+<img src="img/nv_ces2026/vr_compute.png" />
+
+**Feature**
+- 
+
+#### Switch Tray
+
+
+<img src="img/nv_ces2026/vr_switch.png" />
+
+**Feature**
+- 
+
+
+<br>
+
+
+### GB300 NVL72
+
+#### Compute Tray
+
+<img src="img/nv_ces2026/gb300_nvl72_compute.png />
+
+**Feature**
+- 4 Blackwell Ultra GPUs
+- 2 Grace CPUs
+- 4 ConnectX-8 800Gbps SuperNICs
+- 1 BlueField-3 DPU
+- 80 PFLOPS (NV FP8 or FP4?)
+- 2TB coherent memory
+
+<br>
+
+#### Switch Tray
+
+<img src="img/nv_ces2026/gb300_nvl72_switch.png" />
+
+**Feature**
+- 2 NVLink-5 switch chips
+- 14.4 TB/s all-to-all bandwidth
+- 7.2 TFLOPS FP8 SHARP in-network compute
+- 100% liquid cooled
+
+
+<br>
+
+### GB200 NVL72
 
 NVL72 system comes with different designs
 
@@ -110,19 +174,24 @@ NVL72 system comes with different designs
 
 <img src="img/nvidia-photonics-quantum-x-spectrum-x-switches.jpg" width="800" />
 
-### GTC 2025 Keynote
-
-Note
-- NVidia will ship Quantum-X (InfiniBand) switch later in 2025, and then a Specturm-X (Ethernet) switch in the second half of 2026.
-- Up to 512 fiber ports on the Spectrum-X switch.
-- 2 optical transceivers per GPU now, 6 optical transceivers per GPU for larger scale with additional layer of switching
-- each transceiver (800G by assumption) costs $1000 and 6W. A 1M GPU datacenter will dedicate 6MW, 10 Rubin Ultra racks for optics
-- 
+<br>
 
 
-### Quantum 3450-LD Switch
 
-<img src="img/nvidia-photonics-quantum-x-ports.jpg" width="800" />
+### Quantum-X
+
+
+**Quantum-X InfiniBand CPO Switch**
+
+
+<img src="img/nv_ces2026/quantum_x.png" width="600" />
+
+<br>
+
+<img src="img/nvidia-photonics-quantum-x-ports.jpg" width="600" />
+
+
+#### Spectrum 3450-LD
 
 Feature
 - 144 ports \@ 800Gb/s, i.e. 115 Tb/s aggregated bandwidth
@@ -130,21 +199,51 @@ Feature
 
 Available in 2025H2
 
-### Spectrum SN6810 
+
+
+<br>
+
+
+### Spectrum-X
+
+**The CPO Version**
+
+<img src="img/nv_ces2026/spectrum_x_cpo.png" width="500" />
+
+<br>
+
+**The copper Version**
+
+<img src="img/nv_ces2026/spectrum_x_copper.png" width="500" />
+
+<br>
+
+#### Switch ASIC + CPO Optical Engine
+
+<img src="img/nv_ces2026/spectrum_x_cpo_switch_chip.png" width="300" />
+
+**Feature**
+- 102.4 Tb/s scale-out switch
+- 200G Si photonics CPO
+- 95% effective bandwidth at scale
+
+
+
+#### Spectrum SN6810 
 
 Feature
 - 128 ports \@ 800Gb/s, i.e. 102.4 Tb/s aggregated bandwidth
 - 1 Spectrum-X CPO switch ASIC ([More detailes](cpo.md#nvidia))
   - extra unused CPO ports may be used for yield-related backup
 
-### Spectrum SN6800 
+#### Spectrum SN6800 
 
 Feature
 - 512 ports \@ 800Gb/s, i.e. 409.6 Tb/s aggregated bandwidth
 - 4 Spectrum-X CPO switch ASIC ([More detailes](cpo.md#nvidia))
   - but 6 is needed for non-blocking (2 ASIC to connect the other 4)
 
-
+<br>
 
 #### Reference
 - [NextPlatform](https://www.nextplatform.com/2025/03/18/nvidia-weaves-silicon-photonics-into-infiniband-and-ethernet/)
@@ -154,9 +253,6 @@ Feature
 - [theVerge](https://www.theverge.com/news/631835/nvidia-blackwell-ultra-ai-chip-gb300)
 - [QQ](https://mp.weixin.qq.com/s/Fm6hFvHygsx0IcQ27G73Xw)
 
-
-
-<br>
 
 ---
 
@@ -179,8 +275,22 @@ Feature
 
 
 
+
 #### Reference
 - [Tech Taiwan](https://cwnewsroom.substack.com/p/exclusive-jensen-huangs-remark-spark-storage-rally-phison-ceo-respond-from-ces)
+
+
+
+### GTC 2025 Keynote
+
+Note
+- NVidia will ship Quantum-X (InfiniBand) switch later in 2025, and then a Specturm-X (Ethernet) switch in the second half of 2026.
+- Up to 512 fiber ports on the Spectrum-X switch.
+- 2 optical transceivers per GPU now, 6 optical transceivers per GPU for larger scale with additional layer of switching
+- each transceiver (800G by assumption) costs $1000 and 6W. A 1M GPU datacenter will dedicate 6MW, 10 Rubin Ultra racks for optics
+- 
+
+
 
 
 
