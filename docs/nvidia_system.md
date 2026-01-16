@@ -35,12 +35,12 @@
 | **Architecture**     | Hopper        | Blackwell                                    | Blackwell                                   | Blackwell Ultra                              | Rubin                                   | Rubin Ultra    |
 | **Process Node**     | TSMC 4N       | TSMC 4NP                                     | TSMC 4NP                                    | TSMC 4NP                                     | Not specified                           | Not specified |
 | **Chip Packaging**   | Monolithic    | Dual GB100 dies with NV-HBI                  | 2 GB100 dies with NV-HBI                    | 2 GB100 dies with NV-HBI                     | 2 Rubin dies with NV-HBI                | 4 Rubin dies with NV-HBI  |
-| **FP4 Tensor**       | Not supported | 7 PFLOPS (dense) <br> 14 PFLOPS (sparse)     | 10 PFLOPS (dense) <br> 20 PFLOPS (sparse)   | 15 PFLOPS (dense) <br> 30 PFLOPS (sparse)    | 50 PFLOPS (inf) <br> 35 PFLOPS (train)  | 100 PFLOPS  |
+| **FP4 Tensor**       | Not supported | 7 PFLOPS (dense) <br> 14 PFLOPS (sparse)     | 10 PFLOPS (dense) <br> 20 PFLOPS (sparse)   | 15 PFLOPS (dense) <br> 30 PFLOPS (sparse)    | 35 PFLOPS (train) <br> 50 PFLOPS (inf)  | 100 PFLOPS (?)  |
 | **INT8 Tensor**      | 0.4 P-OPS     | 3.5 P-OPS (dense) <br> 7 P-OPS (sparse)      | 5 P-OPS (dense) <br> 9 P-OPS (sparse)       | 7.5 P-OPS (dense), 15 P-OPS (sparse)         | Not specified                           | Not specified |
 | **FP16 Tensor**      | 0.2 PFLOPS    | 1.85 PFLOPS (dense) <br> 3.5 PFLOPS (sparse) | 2.5 PFLOPS (dense) <br> 4.5 PFLOPS (sparse) | 3.75 PFLOPS (dense) <br> 7.5 PFLOPS (sparse) | Not specified                           | Not specified |
 | **FP64**             | 34 TFLOPS     | 30 TFLOPS                                    | 40 TFLOPS                                   | 68 TFLOPS                                    | Not specified                           | Not specified |
-| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                                 | 192 GB HBM3e                                | 288 GB HBM3e                                 | 288 GB HBM4                             | 1 TB HBM4e |
-| **Memory Bandwidth** | 3.2 TB/s      | Up to 8 TB/s (4Tb/s /die)                    | Up to 8 TB/s (4Tb/s /die)                   | Up to 8 TB/s (4Tb/s /die)                    | 22 TB/s (total)                         | 8 TB/s /die |
+| **Memory**           | 80 GB HBM3    | 192 GB HBM3e                                 | 384 GB HBM3e                                | 576 GB HBM3e (?)                             | 576 GB HBM4 (?)                         | 1 TB HBM4e |
+| **Memory Bandwidth** | 3.2 TB/s      | 4Tb/s                                        | Up to 8 TB/s (?)                            | Up to 8 TB/s (?)                             | 22 TB/s (total)                         | 8 TB/s /die |
 | **NVLink Bandwidth** | 900 GB/s      | 1.8 TB/s                                     | 1.8 TB/s                                    | 1.8 TB/s                                     | 3.6 TB/s                                |              |
 | **Power (TDP)**      | 700W          | 700W                                         | 1,000W                                      | Not specified                                | Not specified                           | Not specified |
 
@@ -102,9 +102,47 @@ Note:
 
 <br>
 
+### Next Gen Kyper Blade System
+
+<img src="img/nv_ces2026/kyber_system.png" width="200" />
+
+(Demo at 2026 CES)
+
+**Feature**
+- Blade design for both compute and switch
+- Midplane board eliminates 2 miles copper cabling
+- Upto 576 GPUs (72 Blades) per rack
+- 100% liquid cooled
+
+
+#### Compute Blade
+
+<img src="img/nv_ces2026/kyber_compute.png" />
+
+**Feature**
+- Cable-less design
+- 8 GPU dies (4 GPU packages?)
+- 2 CPU dies
+
+
+#### Switch Blade
+
+<img src="img/nv_ces2026/kyber_switch.png" />
+
+**Feature**
+- Cable-free design
+- All-to-all among all GPUs
+
+
+
+<br>
+
 ### Vera Rubin NVL72
 
+
 <img src="img/nv_ces2026/vr_nlv72.png" width="200" />
+
+(Demo at 2026 CES)
 
 
 #### Compute Tray
@@ -112,21 +150,52 @@ Note:
 <img src="img/nv_ces2026/vr_compute.png" />
 
 **Feature**
-- 
+- 200 PFOLPS AI compute
+- 4 Rubin GPUs
+- 2 Vera CPUs
+- 8 ConnectX-9 SuperNICs (1.6Tb/s with 200G PAM4 SerDes)
+- 1 BlueField-4 DPU
+- Cable-free modular design
+
+
 
 #### Switch Tray
-
 
 <img src="img/nv_ces2026/vr_switch.png" />
 
 **Feature**
-- 
+- Cable-free modular design
+
+
+**NVLink 6 Switch ASIC**
+
+<img src="img/nv_ces2026/nvlink6_switch_asic.png" />
+
+**Feature**
+- 3.6 TB/s per GPU all-to-all BW
+- 400G SerDes
+- In-network SHARP collectives
+- 108B Transistors
 
 
 <br>
 
 
 ### GB300 NVL72
+
+
+<img src="img/nv_ces2026/gb300_nlv72.png" width="200" />
+
+(Demo by Gigabyte at 2026 CES)
+
+**Feature**
+- 1.1 EFLOPS dense NV FP4
+- 20 TB HBM3e
+- 37 TB Fast memory
+- 72 Blackwell Ultra GPUs (GB300)
+- 36 Grace CPUs
+- 18 Compute trays
+
 
 #### Compute Tray
 
@@ -173,6 +242,18 @@ NVL72 system comes with different designs
 <br>
 
 ## CPO Switch
+
+
+### NVL72 Scale-up Network
+
+**NVSwitch configuration for the GB200 NVL72 rack system (NVidia)**
+
+<img src="img/nvl72_switch_archi.jpg" width="800">
+
+<br>
+
+**CPO Enabled NVLink Switches**
+
 
 <img src="img/nvidia-photonics-quantum-x-spectrum-x-switches.jpg" width="800" />
 
@@ -228,6 +309,8 @@ Available in 2025H2
 - 102.4 Tb/s scale-out switch 
 - 200G Si photonics CPO
 - 95% effective bandwidth at scale
+- 128 ports \@800Gb/s or 512 ports \@200Gb/s
+- 352B transistors
 
 
 
