@@ -12,6 +12,8 @@
   - [GPU Comparison](#gpu-comparison)
   - [System Comparison](#system-comparison)
 - [Rack System](#rack-system)
+  - [Vera Rubin NVL72](#vera-rubin-nvl72)
+  - [GB300 NVL72](#gb300-nvl72)
   - [GB200 NVL72](#gb200-nvl72)
 - [CPO Switch](#cpo-switch)
   - [Quantum-X](#quantum-x)
