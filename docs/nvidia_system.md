@@ -128,7 +128,7 @@ Note:
 
 #### Compute Tray
 
-<img src="img/nv_ces2026/gb300_nvl72_compute.png />
+<img src="img/nv_ces2026/gb300_nvl72_compute.png" />
 
 **Feature**
 - 4 Blackwell Ultra GPUs
@@ -223,7 +223,7 @@ Available in 2025H2
 <img src="img/nv_ces2026/spectrum_x_cpo_switch_chip.png" width="300" />
 
 **Feature**
-- 102.4 Tb/s scale-out switch
+- 102.4 Tb/s scale-out switch 
 - 200G Si photonics CPO
 - 95% effective bandwidth at scale
 
