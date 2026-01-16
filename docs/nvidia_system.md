@@ -238,11 +238,6 @@ NVL72 system comes with different designs
 
 <br>
 
----
-
-<br>
-
-## CPO Switch
 
 
 ### NVL72 Scale-up Network
@@ -253,7 +248,16 @@ NVL72 system comes with different designs
 
 <br>
 
-**CPO Enabled NVLink Switches**
+
+
+---
+
+<br>
+
+## CPO Switch
+
+
+**CPO Enabled Scale-Out Switches**
 
 
 <img src="img/nvidia-photonics-quantum-x-spectrum-x-switches.jpg" width="800" />
