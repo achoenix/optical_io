@@ -1,3 +1,7 @@
+---
+title: Navigation
+---
+
 #### by *Andy Sun* (achoenix@gmail.com)
 
 *Last update:* {{ site.data.build.last_updated }}
