@@ -1,6 +1,6 @@
 #### by *Andy Sun* (achoenix@gmail.com)
 
-*Last update: 2025/10/04*
+*Last update:* {{ site.data.build.last_updated }}
 
 ## Site Navigation
 
