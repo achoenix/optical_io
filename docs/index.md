@@ -1,3 +1,8 @@
+---
+layout: default
+title: Optical I/O
+---
+
 # Optical I/O
 
 ## Description
