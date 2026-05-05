@@ -1,6 +1,3 @@
----
-title: Navigation
----
 
 #### by *Andy Sun* (achoenix@gmail.com)
 
