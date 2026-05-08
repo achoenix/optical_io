@@ -9,6 +9,11 @@ COUPE stands for Compact Universal Photonic Engine.
 
 ## Roadmap
 
+### 2026 North America Technology Symposium
+
+COUPE Roadmap
+<img src="img/tsmc-26-ssna-coupe.png" width="800" />
+
 
 ### 2025 North America Technology Symposium
 
