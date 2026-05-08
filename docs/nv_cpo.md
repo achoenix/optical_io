@@ -43,7 +43,7 @@ Plan to ship in 2026H2
 - the Ethernet switch ASIC has a monolithic packet processing engine 
 - 8 SerDes chiplets (two per side) 
 - 4 unknown chiplets at the corners
-- 8 optical engines on each side, i.g. a total of 32 OEs
+- 8 active optical engines (extra 1 spare) on each side, i.g. a total of 32 OEs (36 with spares)
 - each optical engine may  support at least 1.6Tb/s (equal to the optical engine in Quantum-X)
 - same 200Gb/s SerDes, 144 lanes pre ASIC
 - liquid cooled
@@ -69,7 +69,7 @@ Ref:
 
 **OE for Quantum-X**
 - 1.6Tbps PAM4 per OE
-- 8 Tx and 8 Rx 200Gbps PAM4 channels, 2 laser input fibers per optical engine
+- 8 Tx and 8 Rx 200Gbps PAM4 channels, 2 laser output fibers per optical engine
 - 200Gbps PAM4 microring modulator per wavelength
 - multi-row scaling of optical interconnect throughput within a single package
 - Stacked CMOS and photonics components 
@@ -78,7 +78,7 @@ Ref:
 
 **OE for Spectrum-X**
 - 3.2Tbps PAM4 per OE
-- 16 Tx and 16 Rx 200Gbps PAM4 channels, ? laser input fibers per OE
+- 16 Tx and 16 Rx 200Gbps PAM4 channels, 4 laser output fibers per OE (2x OE per ELS)
 - 200Gbps PAM4 microring modulator per wavelength
 - solder reflown directly onto the module substrate
 - Stacked CMOS and photonics components 

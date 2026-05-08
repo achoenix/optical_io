@@ -7,7 +7,8 @@
 
 - [Homepage](index.html)
 - [Silicon Photonics](si_pic.html#silicon-photonics)
-    - [TSMC](tsmc_pic.html#tsmc-photonic-ic)
+    - [TSMC](tsmc_pic.html#tsmc-pic-process)
+    - [GF](gf_pic.html#gf-pic-process)
 - [Co-Packaged Optics](cpo.html#co-packge-optics-cpo)
     - [NVIDIA CPO](nv_cpo.html#nvidia-cpo)
     - [Light Source](cpo_laser.html#cpo-light-source)
